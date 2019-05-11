@@ -12,6 +12,7 @@ import CoreData
 
 @objc(Trip)
 public class Trip: NSManagedObject {
+    
     var entries: [Entry]? {
         return self.rawEntries?.array as? [Entry]
     }
@@ -26,6 +27,6 @@ public class Trip: NSManagedObject {
         self.init(entity: Trip.entity(), insertInto: managedContext)
         
         self.title = title
-        self.content = contents
+        self.contents = contents
     }
 }

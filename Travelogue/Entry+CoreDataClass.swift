@@ -45,17 +45,17 @@ public class Entry: NSManagedObject {
         self.init(entity: Entry.entity(), insertInto: managedContext)
         
         self.title = title
-        self.content = contents
+        self.contents = contents
         self.date = date
         self.image = image
-        self.tripBlog = trip
+        self.trip = trip
     }
     
     func update(title: String, contents: String?, date: Date?, image: UIImage?, trip: Trip) {
         self.title = title
-        self.content = contents
+        self.contents = contents
         self.date = date
         self.image = image
-        self.tripBlog = trip
+        self.trip = trip
     }
 }

@@ -17,10 +17,10 @@ extension Entry {
         return NSFetchRequest<Entry>(entityName: "Entry")
     }
 
-    @NSManaged public var content: String?
+    @NSManaged public var contents: String?
     @NSManaged public var rawDate: NSDate?
     @NSManaged public var rawImage: NSData?
     @NSManaged public var title: String?
-    @NSManaged public var tripBlog: Trip?
+    @NSManaged public var trip: Trip?
 
 }
